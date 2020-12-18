@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "425173765060",
+    "firebase_url": "https://nust-social-circle.firebaseio.com",
+    "project_id": "nust-social-circle",
+    "storage_bucket": "nust-social-circle.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:425173765060:android:6f38f313de146094f1b291",
+        "android_client_info": {
+          "package_name": "com.example.nustsocialcircle"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "425173765060-ajoirtfb4qi88m4pqddl51h46sn1bais.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.nustsocialcircle",
+            "certificate_hash": "73e73de80c9a9dbe0f04e4f901649057fa23dab2"
+          }
+        },
+        {
+          "client_id": "425173765060-rokl0tbblr2pj6n77s6lubajjml71tft.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7r-koa6dJmeu6q3EXVugUBKhEJcQ8nAg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "425173765060-rokl0tbblr2pj6n77s6lubajjml71tft.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

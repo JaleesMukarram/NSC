@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#400885</color>
+    <color name="colorPrimaryDark">#300B43</color>
+    <color name="colorAccent">#FFFFFF</color>
+    <color name="white">#ffffff</color>
+    <color name="hintGrey">#DCC3C3</color>
+    <color name="grey">#DCDDDD</color>
+    <color name="darkGrey">#7F8080</color>
+    <color name="black">#000000</color>
+    <color name="golden">#AABA1A</color>
+    <color name="darkOrange">#E34C0E</color>
+    <color name="lightOrange">#DC6529</color>
+    <color name="colorPrimaryAlpha">#1AFFFFFF</color>
+    <color name="parrotGreen">#51FF00</color>
+    <color name="yellow">#FFF100</color>
+
+
+    <color name="transparent" >#00FFFFFF</color>
+
+
+    <color name="gradientBlue">#000526</color>
+
+
+    <color name="colorPrimaryDarkOld">#400885</color>
+    <color name="colorPrimaryOld">#5d0fbd</color>
+
+    <color name="colorPrimaryDarkMagic">#190026</color>
+
+
+    <color name="darkText">#5F5985</color>
+    <color name="darkTextFull">#403C59</color>
+
+
+    <color name="colorSecendary">#0EB9E4</color>
+
+    <color name="colorOk">#22BF4D</color>
+    <color name="green">#19882C</color>
+    <color name="colorAlert">#B60202</color>
+
+
+    <color name="colorTransparentAlert">#1AFB0000</color>
+    <color name="colorTransparentOk">#1A16E862</color>
+    <color name="colorTransparentWhite">#68FFFFFF</color>
+    <color name="colorTransparentPrimary">#1A5D0FBD</color>
+
+
+</resources><!--    06898E-->

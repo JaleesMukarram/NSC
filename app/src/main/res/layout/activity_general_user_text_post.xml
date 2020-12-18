@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".GeneralUserTextPost">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autoSizeMaxTextSize="100dp"
+        android:autoSizeMinTextSize="202dp"
+        android:autoSizeTextType="uniform"
+        android:scrollbars="vertical"
+        android:text="2200"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/grey"
+        android:textIsSelectable="true"
+        android:textStyle="normal"
+
+        />
+</LinearLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">NUST Social Circle</string>
+    <string name="home">Option 1</string>
+    <string name="setting">Option 2</string>
+    <string name="about">Option 3</string>
+    <string name="Search">Search</string>
+    <string name="ac">The virus is typically spread during close contact and via respiratory droplets produced when people cough or sneeze.[17][18] Respiratory droplets may be produced during breathing but it is not considered airborne.[17] It may also spread when one touches a contaminated surface and then their face.[17][18] It is most contagious when people are symptomatic, although spread may be possible before symptoms appear.[18] The virus can live on surfaces up to 72 hours.[19] Time from exposure to onset of symptoms is generally between two and fourteen days, with an average of five days.[20][21] The standard method of diagnosis is by reverse transcription polymerase chain reaction (rRT-PCR) from a nasopharyngeal swab. The infection can also be diagnosed from a combination of symptoms, risk factors and a chest CT scan showing features of pneumonia.[22][23] Recommended measures to prevent infection include frequent hand washing, social distancing (maintaining physical distance from others, especially from those with symptoms), and keeping unwashed hands away from the face.[24][25] The use of masks is recommended by some national health authorities for those who suspect they have the virus and their caregivers, but not for the general public, although simple cloth masks may be used by those who desire them.[26][27] There is no vaccine or specific antiviral treatment for COVID-19. Management involves treatment of symptoms, supportive care, isolation, and experimental measures.[28] The World Health Organization (WHO) declared the 2019–20 coronavirus outbreak a Public Health Emergency of International Concern (PHEIC) on 30 January 2020[29][30] and a pandemic on 11 March 2020.[10] Evidence of local transmission of the disease has been found in many countries across all six WHO regions.[31]</string>
+    <string name="enableString">Item Disabled. Click to Enable Image</string>
+    <string name="next" >Next</string>
+    <string name="finish">Finish</string>
+    <string name="see_more">See More</string>
+</resources>

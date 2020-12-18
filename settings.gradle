@@ -1,0 +1,2 @@
+rootProject.name='NUST Social Circle'
+include ':app'

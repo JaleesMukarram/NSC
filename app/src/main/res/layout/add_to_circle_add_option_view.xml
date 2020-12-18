@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@color/grey">
+
+<!--    AddToCircleView-->
+
+    <Button
+            android:id="@+id/BTNAddToCircleViewAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/round_medium_dark_orange"
+            android:drawableStart="@drawable/ic_add_circle_outline_white_24"
+            android:drawablePadding="10dp"
+            android:elevation="20dp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:text="Add to Circle"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+</RelativeLayout>

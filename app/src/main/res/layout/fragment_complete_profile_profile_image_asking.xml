@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gradientBlue">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        <View
+                android:id="@+id/viewHolder"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@drawable/nust_cover"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        <FrameLayout
+                android:id="@+id/layoutProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/viewHolder"
+                app:layout_constraintTop_toBottomOf="@+id/viewHolder">
+
+            <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:elevation="10dp"
+                    app:cardBackgroundColor="@color/grey"
+                    app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                    <TextView
+                            android:id="@+id/TVProfileImageFragmentNameShowing"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="80dp"
+                            android:fontFamily="@font/lemon"
+                            android:gravity="center"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                    <TextView
+                            android:id="@+id/TVProfileImageFragmentSchoolShowing"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/TVProfileImageFragmentNameShowing"
+                            android:layout_marginTop="2dp"
+                            android:gravity="center"
+                            android:textAlignment="center"
+                            android:textColor="@color/darkOrange"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+
+                            />
+
+                    <LinearLayout
+
+                            android:id="@+id/LLProfileImageFragmentEtcInfoContainer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/TVProfileImageFragmentSchoolShowing"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="15dp"
+                            android:weightSum="3"
+
+                            >
+
+                        <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:elevation="20dp"
+                                android:orientation="vertical">
+
+                            <TextView
+                                    android:id="@+id/TVProfileImageFragmentSectionShowing"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold"
+
+                                    />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:text="Section"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/darkGrey"
+
+                                    />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:elevation="20dp"
+                                android:orientation="vertical">
+
+                            <TextView
+                                    android:id="@+id/TVProfileImageFragmentBadgeShowing"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold"
+
+                                    />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:text="Batch"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/darkGrey"
+
+                                    />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:elevation="20dp"
+
+                                android:orientation="vertical">
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:text="N/A"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold"
+
+                                    />
+
+                            <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:text="Program"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/darkGrey"
+
+                                    />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+        </FrameLayout>
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/IVProfileImageFragmentProfilePic"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/nust_blur_scholar_avenue"
+                app:civ_border_color="@color/colorPrimaryDark"
+                app:civ_border_overlay="true"
+                app:civ_border_width="3dp"
+                app:layout_constraintBottom_toTopOf="@+id/layoutProfile"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/layoutProfile"
+
+                />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

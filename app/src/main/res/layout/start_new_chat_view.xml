@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/RLStartNewChatParentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:elevation="3dp">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="6dp"
+        android:src="@drawable/ic_direction_right_24" />
+
+    <TextView
+
+        android:id="@+id/TVStartNewChatNameShowing"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentTop="true"
+
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+
+
+        android:layout_toEndOf="@+id/IVStartNewChatProfileImage"
+        android:inputType="text|textNoSuggestions"
+        android:paddingLeft="10dp"
+        android:text="Name"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/TVStartNewChatSchoolShowing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/TVStartNewChatNameShowing"
+
+        android:layout_alignBottom="@+id/IVStartNewChatProfileImage"
+
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toEndOf="@+id/IVStartNewChatProfileImage"
+        android:paddingLeft="10dp"
+        android:text="School"
+        android:textColor="@color/black"
+        android:textSize="14dp" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/IVStartNewChatProfileImage"
+        android:layout_width="60dp"
+
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+
+        app:srcCompat="@drawable/ic_account_default_white" />
+
+
+</RelativeLayout>

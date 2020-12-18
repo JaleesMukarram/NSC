@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        tools:context=".GeneralUserCompleteRegistration">
+
+
+    <RelativeLayout
+            android:id="@+id/RLGeneralUserCompleteRegistrationTopInformationContainer"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:background="@color/colorPrimary">
+
+        <TextView
+                android:id="@+id/TVGeneralUserCompleteRegistrationUserEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/lemon"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/RLGeneralUserCompleteRegistrationBottomInformationContainer"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorPrimaryDark">
+
+
+        <LinearLayout
+                android:id="@+id/LLGeneralUserCompleteRegistrationNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+
+
+            <TextView
+                    android:id="@+id/TVGeneralUserCompleteRegistrationNextShowing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/lemon"
+                    android:gravity="center"
+                    android:text="Next"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="20dp"
+                    android:gravity="center"
+                    android:src="@drawable/ic_navigate_next_white_48" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:id="@+id/LLGeneralUserCompleteRegistrationBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal"
+                android:visibility="invisible">
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:gravity="center"
+                    android:src="@drawable/ic_navigate_before_white_48" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/lemon"
+                    android:gravity="center"
+                    android:text="Back"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <androidx.viewpager.widget.ViewPager
+            android:id="@+id/VPGeneralUserCompleteRegistrationAllProfileOptions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/RLGeneralUserCompleteRegistrationBottomInformationContainer"
+            android:layout_below="@+id/RLGeneralUserCompleteRegistrationTopInformationContainer"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true" />
+
+
+    <!--    <Button-->
+    <!--        android:id="@+id/BTNCompleteRegistrationSave"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+
+    <!--        android:background="@color/colorPrimary"-->
+    <!--        android:padding="10dp"-->
+    <!--        android:text="Save"-->
+    <!--        android:textColor="@color/white"-->
+
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toStartOf="@+id/guideline9"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/guideline1"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/ETCompleteRegistrationSectionAsking" />-->
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/ETCompleteRegistrationNameAsking"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="8dp"-->
+    <!--        android:background="@drawable/corner_rectangle_primary"-->
+
+    <!--        android:ems="10"-->
+    <!--        android:inputType="textPersonName"-->
+
+    <!--        android:padding="10dp"-->
+    <!--        app:layout_constraintEnd_toStartOf="@+id/guideline9"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/guideline1"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/textView2" />-->
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/ETCompleteRegistrationSectionAsking"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="8dp"-->
+    <!--        android:background="@drawable/corner_rectangle_primary"-->
+
+    <!--        android:ems="10"-->
+    <!--        android:inputType="textPersonName"-->
+
+    <!--        android:padding="10dp"-->
+    <!--        app:layout_constraintEnd_toStartOf="@+id/guideline9"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/guideline1"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/textView4" />-->
+
+
+    <!--    <RelativeLayout-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:background="@drawable/nust_cover"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/guideline13"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.497"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="0.0">-->
+
+    <!--        <ProgressBar-->
+    <!--            android:id="@+id/PBCompleteRegistrationProfilePicUploading"-->
+    <!--            style="?android:progressBarStyleHorizontal"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+
+    <!--            android:layout_alignStart="@+id/IVCompleteRegistrationProfilePic"-->
+    <!--            android:layout_alignTop="@+id/IVCompleteRegistrationProfilePic"-->
+    <!--            android:layout_alignEnd="@+id/IVCompleteRegistrationProfilePic"-->
+    <!--            android:layout_alignBottom="@+id/IVCompleteRegistrationProfilePic"-->
+
+
+    <!--            android:progress="0"-->
+    <!--            android:progressDrawable="@drawable/circular_progress_bar"-->
+    <!--            android:visibility="invisible" />-->
+
+    <!--        <de.hdodenhof.circleimageview.CircleImageView-->
+    <!--            android:id="@+id/IVCompleteRegistrationProfilePic"-->
+    <!--            android:layout_width="200dp"-->
+    <!--            android:layout_height="200dp"-->
+    <!--            android:layout_centerInParent="true"-->
+    <!--            android:padding="20dp"-->
+    <!--            android:src="@drawable/ic_account_default_white"-->
+    <!--            app:civ_border_color="@color/white"-->
+    <!--            app:civ_border_width="3dp"-->
+
+    <!--            />-->
+
+
+    <!--    </RelativeLayout>-->
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/IVCompleteRegistrationSelectImage"-->
+    <!--        android:layout_width="48dp"-->
+    <!--        android:layout_height="48dp"-->
+    <!--        android:layout_marginEnd="8dp"-->
+    <!--        android:layout_marginBottom="8dp"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/guideline13"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:srcCompat="@drawable/ic_photo_camera_white_24" />-->
+
+
+    <!--    <Spinner-->
+    <!--        android:id="@+id/SPRCompleteRegistrationSectionsList"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="8dp"-->
+    <!--        app:layout_constraintEnd_toStartOf="@+id/guideline9"-->
+    <!--        app:layout_constraintHorizontal_bias="0.288"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/guideline1"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/textView3" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView2"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+
+    <!--        android:layout_marginTop="32dp"-->
+    <!--        android:text="Name"-->
+    <!--        android:textColor="@color/colorPrimary"-->
+
+
+    <!--        android:textSize="16dp"-->
+    <!--        android:textStyle="bold"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/guideline1"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/guideline13" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView3"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+
+    <!--        android:layout_marginTop="16dp"-->
+    <!--        android:text="School"-->
+    <!--        android:textColor="@color/colorPrimary"-->
+    <!--        android:textSize="16dp"-->
+
+    <!--        android:textStyle="bold"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/guideline1"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/ETCompleteRegistrationNameAsking" />-->
+
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView4"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+
+    <!--        android:layout_marginTop="8dp"-->
+    <!--        android:text="Section"-->
+    <!--        android:textColor="@color/colorPrimary"-->
+    <!--        android:textSize="16dp"-->
+
+    <!--        android:textStyle="bold"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/guideline1"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/SPRCompleteRegistrationSectionsList" />-->
+
+    <!--    &lt;!&ndash;    Horizontal Guidelines&ndash;&gt;-->
+
+
+</RelativeLayout>
+
+

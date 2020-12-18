@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/RLGeneralUserChatWithGeneralUserMainContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey"
+        tools:context=".GeneralUserChatWithGeneralUser">
+
+
+    <RelativeLayout
+            android:id="@+id/RLGeneralUserChatWithGeneralUserToolbarContainer"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:background="@color/colorPrimary">
+
+
+        <ImageView
+                android:id="@+id/IVGeneralUserChatWithGeneralUserBackButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="5dp"
+                android:foregroundGravity="center"
+                android:src="@drawable/ic_arrow_back_grey_24"
+
+                />
+
+
+        <ImageView
+                android:id="@+id/IVGeneralUserChatWithGeneralUserThreeDotMenuOptions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/ic_three_dots_white_24"
+
+                />
+
+
+        <TextView
+                android:id="@+id/TVGeneralUserChatWithGeneralUserVisitingUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="6dp"
+                android:layout_toEndOf="@+id/IVGeneralUserChatWithGeneralUserVisitingUserProfileImageShowing"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/IVGeneralUserChatWithGeneralUserVisitingUserProfileImageShowing"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@+id/IVGeneralUserChatWithGeneralUserBackButton" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+            android:id="@+id/RLGeneralUserChatWithGeneralUserBottomChatSendContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/bg_round_chat_send"
+
+            >
+
+        <EditText
+                android:id="@+id/ETGeneralUserChatWithGeneralUserTypedMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="5dp"
+                android:layout_toStartOf="@+id/IVGeneralUserChatWithGeneralUserShowSendOptions"
+                android:background="@android:color/transparent"
+                android:inputType="textNoSuggestions|textMultiLine"
+                android:textColor="@color/grey" />
+
+
+        <ImageView
+                android:id="@+id/IVGeneralUserChatWithGeneralUserSendButton"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_send_dark_orange_48"
+
+                />
+
+        <ImageView
+
+                android:id="@+id/IVGeneralUserChatWithGeneralUserShowSendOptions"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_toStartOf="@+id/IVGeneralUserChatWithGeneralUserSendButton"
+                android:src="@drawable/ic_attach_file_black_24"
+
+                />
+
+
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/RVGeneralUserChatWithGeneralUserAllMessagesShowing"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/RLGeneralUserChatWithGeneralUserBottomChatSendContainer"
+            android:layout_below="@+id/RLGeneralUserChatWithGeneralUserToolbarContainer"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+
+
+            />
+
+
+</RelativeLayout>

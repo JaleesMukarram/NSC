@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <!--    HomeScreenOptions-->
+
+    <item
+        android:id="@+id/ITMHomeScreenOptionsHome"
+        android:icon="@drawable/ic_home_on_30"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/ITMHomeScreenOptionsFavorite"
+        android:icon="@drawable/ic_favorite_off_30"
+        android:title="Fav" />
+
+    <item
+        android:id="@+id/ITMHomeScreenOptionsMessages"
+        android:icon="@drawable/ic_message_off_30"
+        android:title="Mes" />
+
+    <item
+        android:id="@+id/ITMHomeScreenOptionsOthers"
+        android:icon="@drawable/ic_three_dots_white_24"
+        android:title="Others" />
+
+
+
+
+</menu>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/purple_gradient_bg"
+        tools:context=".GeneralUserAddImages">
+
+
+    <GridView
+            android:id="@+id/GVGeneralUserAddImagesAllImagesShowing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/RVGeneralUserAddImagesSelectedImagesShowing"
+            android:layout_below="@+id/LLGeneralUserAddImagesTopContainer"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:background="@color/white"
+            android:fastScrollAlwaysVisible="true"
+            android:numColumns="4" />
+
+    <ImageView
+            android:id="@+id/IVGeneralUserAddImagesNextBuon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/RVGeneralUserAddImagesSelectedImagesShowing"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/ic_navigate_next_white_48" />
+
+
+    <LinearLayout
+
+            android:id="@+id/LLGeneralUserAddImagesTopContainer"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true">
+
+
+        <ImageView
+                android:id="@+id/IVGeneralUserAddImagesBackButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/ic_arrow_back_grey_24" />
+
+        <TextView
+                android:id="@+id/TVGeneralUserAddImagesSelectImages"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:focusable="true"
+                android:focusedByDefault="true"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="Select Images"
+                android:textColor="@color/grey"
+
+                android:textSize="18dp"
+                android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+
+            android:id="@+id/RVGeneralUserAddImagesSelectedImagesShowing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toStartOf="@+id/IVGeneralUserAddImagesNextBuon"
+            android:scrollbars="horizontal" />
+
+
+</RelativeLayout>

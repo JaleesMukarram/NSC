@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey">
+
+    <!--    RemoveFromCircleView-->
+
+    <Button
+            android:id="@+id/BTNRemoveFromCircleViewRemove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/round_medium_dark_grey"
+            android:drawableStart="@drawable/ic_remove_circle_outline_white_24"
+            android:drawablePadding="10dp"
+            android:elevation="20dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Remove From Circle"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    <TextView
+            android:id="@+id/TVRemoveFromCircleViewAddDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/BTNRemoveFromCircleViewRemove"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:textAllCaps="false"
+            android:textColor="@color/golden"
+
+            />
+
+</RelativeLayout>
